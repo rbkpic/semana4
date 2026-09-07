@@ -11,7 +11,7 @@ def calcular_total():
 
 calcular_total()
 print(total)
-
+#porque total fue declarada dentro de una funcion y deja de existir una vez se ejecuta la funcion.
 contador = 0
 
 def incrementar_contador():
@@ -22,4 +22,4 @@ def incrementar_contador():
 print("Valor inicial:", contador) 
 incrementar_contador()
 incrementar_contador()
-print("Valor modificado:", contador)  # Muestra 2
+print("Valor modificado:", contador)  
