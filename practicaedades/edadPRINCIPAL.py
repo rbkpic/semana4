@@ -1,4 +1,6 @@
-import edadesCRUD
+import edadesCRUD 
+
+
 
 def leeredad():
     print("Dime la edad: ")
@@ -13,8 +15,8 @@ def menu():
     0. Salir
     Digita una opción válida:
     """)
-    opcion=int(input())
-    return 
+    opcion=int(input("Seleccione una opcion: "))
+    return opcion
 
 def main():
     while True:
@@ -25,8 +27,10 @@ def main():
             print(edadesCRUD.mostrar())
         elif op==3:
             edadesCRUD.evaluaredades()
+            edadesCRUD.maxymin()
         elif op==0:
             print("Adios...")
+            break
         else:
             print("Opcion invalida...")
 
